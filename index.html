@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Watersprite Lake — A Field Guide to the Granite Bowl East of Squamish, BC</title>
+<link rel="canonical" href="https://waterspritelake.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An honest field guide to Watersprite Lake near Squamish, BC — the turquoise alpine lake in a granite bowl, the BCMC hut and tent platforms, the Mamquam FSR drive, the boulder field, cold plunges, and star photography.">
+<meta name="keywords" content="Watersprite Lake, Watersprite Lake hike, Watersprite Lake hut, BCMC hut, Squamish alpine hikes, Mamquam Forest Service Road, turquoise lake Squamish, Watersprite Lake camping, Squamish backcountry">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Watersprite Lake — A Field Guide to the Granite Bowl East of Squamish">
+<meta property="og:description" content="The turquoise alpine lake in a granite bowl east of Squamish: the BCMC hut, the Mamquam FSR drive, the boulder field, and what the trip reports leave out.">
+<meta property="og:url" content="https://waterspritelake.com/">
+<meta property="og:locale" content="en_CA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2f1ec;
+    --paper-raise: #f7f6f2;
+    --paper-cool: #e9e9e3;
+    --ink: #1d2022;
+    --ink-soft: #33383b;
+    --ink-mute: #6d7276;
+    --rule: #d8d8d0;
+    --rule-strong: #bfc0b7;
+    --granite: #55606a;
+    --granite-deep: #38424c;
+    --teal: #16766f;
+    --teal-bright: #2fa79b;
+    --tarn: #57c4b8;
+    --alpenglow: #c4756a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--teal); color: var(--paper); }
+
+  a { color: inherit; text-decoration: none; }
+  .ul { border-bottom: 1px solid var(--rule-strong); transition: border-color .2s; }
+  .ul:hover { border-bottom-color: var(--teal); }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(2.9rem, 7vw, 5.4rem); font-weight: 340; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
+  h3 { font-size: 1.22rem; font-weight: 500; line-height: 1.3; }
+  p  { margin: 0 0 1.05rem; color: var(--ink-soft); font-size: 1.03rem; line-height: 1.72; }
+  em { font-style: italic; }
+
+  .wrap   { max-width: 1120px; margin: 0 auto; padding: 0 1.6rem; }
+  .narrow { max-width: 700px;  margin: 0 auto; padding: 0 1.6rem; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 1rem;
+    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+    font-weight: 600; color: var(--teal);
+    margin-bottom: 1.1rem;
+  }
+  .eyebrow::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  .eyebrow.center { justify-content: center; }
+  .eyebrow.center::before { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+  /* ---------- NAV ---------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 60;
+    background: rgba(242,241,236,0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .inner {
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.85rem 1.6rem;
+  }
+  .wordmark { display: flex; align-items: baseline; gap: 0.75rem; }
+  .wordmark .wm {
+    font-family: "Fraunces", serif; font-size: 1.06rem; font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .wordmark small {
+    font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 500; color: var(--ink-mute);
+  }
+  @media (max-width: 620px) { .wordmark small { display: none; } }
+  nav.top .links { display: flex; gap: 1.4rem; }
+  nav.top .links a {
+    font-size: 0.73rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 500; color: var(--ink-soft);
+  }
+  nav.top .links a:hover { color: var(--teal); }
+  @media (max-width: 780px) { nav.top .links { display: none; } }
+
+  /* ---------- MASTHEAD ---------- */
+  header.masthead { padding: 4.5rem 0 0; text-align: center; }
+  .vol-line {
+    font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 500;
+    display: flex; align-items: center; justify-content: center; gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .vol-line::before, .vol-line::after {
+    content: ""; width: 56px; height: 1px; background: var(--rule-strong);
+  }
+  header.masthead .deck {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 340;
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+    color: var(--ink-soft); line-height: 1.5;
+    max-width: 34em; margin: 1.4rem auto 0;
+  }
+
+  /* ---------- COORDINATE RIBBON ---------- */
+  .ribbon {
+    margin: 3rem auto 0;
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    display: flex; flex-wrap: wrap; justify-content: center;
+    font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 500;
+  }
+  .ribbon span {
+    padding: 0.75rem 1.4rem;
+    border-right: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  .ribbon span:last-child { border-right: none; }
+  .ribbon b { color: var(--ink); font-weight: 600; }
+  @media (max-width: 700px) {
+    .ribbon { justify-content: flex-start; }
+    .ribbon span { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--rule); text-align: center; }
+    .ribbon span:nth-last-child(-n+2) { border-bottom: none; }
+  }
+
+  /* ---------- HERO SCENE ---------- */
+  .hero-scene { margin: 0; padding: 0; line-height: 0; background: var(--paper); }
+  .hero-scene svg { width: 100%; height: auto; display: block; }
+  .hero-caption {
+    line-height: 1.6;
+    text-align: center;
+    font-size: 0.78rem; color: var(--ink-mute);
+    padding: 0.9rem 1.6rem 0;
+    font-style: italic;
+    font-family: "Fraunces", serif;
+  }
+
+  /* ---------- QUICK TAKE ---------- */
+  section.quicktake { padding: 6rem 0 6.5rem; }
+  .qt-grid {
+    display: grid; grid-template-columns: 1.35fr 1fr; gap: 4.5rem;
+    align-items: start;
+  }
+  @media (max-width: 880px) { .qt-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+  .qt-lead {
+    font-family: "Fraunces", serif; font-weight: 380;
+    font-size: clamp(1.3rem, 2.4vw, 1.65rem);
+    line-height: 1.45; color: var(--ink);
+    margin-bottom: 1.4rem;
+  }
+  .stat-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--rule-strong);
+    border-left: 1px solid var(--rule-strong);
+  }
+  .stat-grid > div {
+    border-right: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    padding: 1.15rem 1.2rem 1.05rem;
+    background: var(--paper-raise);
+  }
+  .stat-grid .n {
+    font-family: "Fraunces", serif; font-weight: 380;
+    font-size: 1.7rem; letter-spacing: -0.02em; color: var(--ink);
+    line-height: 1.1;
+  }
+  .stat-grid .n small { font-size: 0.95rem; color: var(--ink-mute); font-weight: 400; }
+  .stat-grid .l {
+    font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 600; margin-top: 0.35rem;
+  }
+  .stat-note { font-size: 0.78rem; color: var(--ink-mute); margin-top: 0.8rem; font-style: italic; }
+
+  /* ---------- ROUTE LOG (vertical) ---------- */
+  section.routelog {
+    padding: 6.5rem 0;
+    background: var(--paper-cool);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .log-head { text-align: center; max-width: 620px; margin: 0 auto 3.5rem; padding: 0 1.6rem; }
+  .log-head p { margin-top: 1rem; font-size: 0.98rem; }
+  .log {
+    max-width: 660px; margin: 0 auto; padding: 0 1.6rem;
+    position: relative;
+  }
+  .log::before {
+    content: "";
+    position: absolute; top: 8px; bottom: 8px; left: calc(1.6rem + 7px);
+    width: 1px; background: var(--rule-strong);
+  }
+  .log-entry {
+    position: relative;
+    padding: 0 0 2.6rem 2.6rem;
+  }
+  .log-entry:last-child { padding-bottom: 0; }
+  .log-entry::before {
+    content: "";
+    position: absolute; left: 3px; top: 7px;
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--paper-cool);
+    border: 2px solid var(--teal);
+  }
+  .log-entry.summit::before { background: var(--teal); }
+  .log-entry .km {
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+    font-weight: 600; color: var(--teal); margin-bottom: 0.3rem;
+  }
+  .log-entry h3 { margin-bottom: 0.4rem; }
+  .log-entry p { font-size: 0.97rem; margin: 0; }
+
+  /* ---------- ESSAY ---------- */
+  section.essay { padding: 6.5rem 0; }
+  section.essay .body p:first-of-type::first-letter {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-size: 4.3rem;
+    float: left;
+    line-height: 0.82;
+    padding: 0.09em 0.14em 0 0;
+    color: var(--teal);
+  }
+  .pullquote {
+    margin: 3rem 0;
+    padding: 2.2rem 0;
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    text-align: center;
+  }
+  .pullquote p {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 360;
+    font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+    line-height: 1.45; color: var(--ink);
+    margin: 0; max-width: 26em; margin-inline: auto;
+  }
+  .pullquote cite {
+    display: block; margin-top: 0.9rem;
+    font-family: "Inter", sans-serif; font-style: normal;
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 600;
+  }
+
+  /* ---------- HUT ---------- */
+  section.hut { padding: 6rem 0 6.5rem; border-top: 1px solid var(--rule); }
+  .hut-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 4rem; align-items: start; }
+  @media (max-width: 880px) { .hut-grid { grid-template-columns: 1fr; gap: 2rem; } }
+  .hut-card {
+    border: 1px solid var(--rule-strong);
+    background: var(--paper-raise);
+    padding: 1.7rem 1.7rem 1.5rem;
+  }
+  .hut-card h4 {
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+    font-weight: 600; color: var(--ink-mute); margin: 0 0 1.1rem;
+  }
+  .hut-card ul { list-style: none; margin: 0; padding: 0; }
+  .hut-card li {
+    display: flex; justify-content: space-between; gap: 1rem;
+    padding: 0.6rem 0; border-top: 1px solid var(--rule);
+    font-size: 0.92rem;
+  }
+  .hut-card li:first-of-type { border-top: none; padding-top: 0; }
+  .hut-card li .k { color: var(--ink-mute); }
+  .hut-card li .v { color: var(--ink); font-weight: 500; text-align: right; }
+  .hut-card li .v em { font-family: "Fraunces", serif; }
+  .hut-card .book-note {
+    margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+    font-size: 0.85rem; color: var(--ink-mute); line-height: 1.55;
+  }
+
+  .care-band {
+    margin-top: 3.5rem;
+    border-left: 3px solid var(--teal);
+    background: rgba(22,118,111,0.07);
+    padding: 1.4rem 1.6rem;
+  }
+  .care-band strong {
+    display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--teal); font-weight: 600; margin-bottom: 0.55rem;
+  }
+  .care-band p { margin: 0 0 0.7rem; font-size: 0.96rem; }
+  .care-band p:last-child { margin-bottom: 0; }
+
+  /* ---------- SEASONS ---------- */
+  section.seasons { padding: 6rem 0 6.5rem; border-top: 1px solid var(--rule); }
+  .season-rows { border-top: 1px solid var(--rule-strong); margin-top: 2.5rem; }
+  .season-row {
+    display: grid; grid-template-columns: 200px 1fr;
+    gap: 2rem; padding: 1.35rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (max-width: 640px) { .season-row { grid-template-columns: 1fr; gap: 0.35rem; } }
+  .season-row .when {
+    font-family: "Fraunces", serif; font-style: italic; font-size: 1.08rem; color: var(--ink);
+  }
+  .season-row .what { font-size: 0.97rem; color: var(--ink-soft); line-height: 1.6; }
+  .season-row.warn .when { color: var(--alpenglow); }
+
+  .winter-band {
+    margin-top: 2.5rem;
+    border-left: 3px solid var(--alpenglow);
+    background: rgba(196,117,106,0.09);
+    padding: 1.4rem 1.6rem;
+  }
+  .winter-band strong {
+    display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--alpenglow); font-weight: 600; margin-bottom: 0.55rem;
+  }
+  .winter-band p { margin: 0 0 0.7rem; font-size: 0.96rem; }
+  .winter-band p:last-child { margin-bottom: 0; }
+
+  /* ---------- HONEST NOTE ---------- */
+  section.honest {
+    padding: 6.5rem 0;
+    background: var(--granite-deep);
+    border-top: 1px solid var(--rule);
+  }
+  section.honest .eyebrow { color: var(--tarn); }
+  section.honest .eyebrow::after { background: rgba(242,241,236,0.18); }
+  section.honest h2 { color: var(--paper); }
+  section.honest p { color: rgba(242,241,236,0.82); }
+  section.honest em { color: var(--paper); }
+  section.honest .ul { border-bottom-color: rgba(242,241,236,0.3); }
+  section.honest .ul:hover { border-bottom-color: var(--tarn); }
+
+  /* ---------- TRAILHEAD SUPPORT ---------- */
+  section.support { padding: 5.5rem 0; border-top: 1px solid var(--rule); }
+  .support-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 1.2rem; margin-top: 2rem; align-items: stretch; }
+  @media (max-width: 880px) { .support-grid { grid-template-columns: 1fr; } }
+  .support-intro p { font-size: 0.98rem; margin: 0; }
+  .support-card {
+    border: 1px solid var(--rule-strong);
+    background: var(--paper-raise);
+    padding: 1.4rem 1.4rem 1.3rem;
+    display: flex; flex-direction: column;
+  }
+  .support-card h3 { font-family: "Inter", sans-serif; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .support-card p { font-size: 0.9rem; margin: 0 0 1rem; }
+  .support-card a.cta {
+    margin-top: auto; align-self: flex-start;
+    font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+    color: var(--teal);
+    border-bottom: 1px solid var(--teal);
+    padding-bottom: 2px;
+    transition: color .2s, border-color .2s;
+  }
+  .support-card a.cta:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ---------- FAQ ---------- */
+  section.faq { padding: 6rem 0 6.5rem; border-top: 1px solid var(--rule); }
+  .faq-list { margin-top: 2.2rem; border-top: 1px solid var(--rule-strong); }
+  details.qa { border-bottom: 1px solid var(--rule); }
+  details.qa > summary {
+    list-style: none; cursor: pointer; outline: none;
+    padding: 1.35rem 0;
+    display: flex; align-items: baseline; gap: 1.1rem;
+    font-family: "Fraunces", serif; font-weight: 460;
+    font-size: 1.16rem; line-height: 1.35; letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  details.qa > summary::-webkit-details-marker { display: none; }
+  details.qa > summary:hover { color: var(--teal); }
+  .qa .tick {
+    flex: 0 0 auto;
+    font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.35rem;
+    color: var(--ink-mute); line-height: 1; transition: transform .2s;
+  }
+  details.qa[open] > summary .tick { transform: rotate(45deg); color: var(--teal); }
+  .qa .ans { padding: 0 0 1.6rem 2.45rem; }
+  @media (max-width: 640px) { .qa .ans { padding-left: 0; } }
+  .qa .ans p { font-size: 0.99rem; margin: 0 0 0.85rem; }
+  .qa .ans p:last-child { margin: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer.colophon { border-top: 1px solid var(--rule-strong); background: var(--paper-cool); padding: 3rem 0 2.2rem; }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; }
+  @media (max-width: 700px) { .foot-grid { grid-template-columns: 1fr; gap: 1.6rem; } }
+  .foot-grid h4 {
+    font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 600; margin: 0 0 0.75rem;
+  }
+  .foot-grid p { font-size: 0.88rem; margin: 0; }
+  .foot-grid ul { list-style: none; margin: 0; padding: 0; }
+  .foot-grid li { margin-bottom: 0.4rem; font-size: 0.88rem; }
+  .foot-grid li a { color: var(--ink-soft); }
+  .foot-grid li a:hover { color: var(--teal); }
+  .foot-bottom {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.2rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem;
+    font-size: 0.76rem; color: var(--ink-mute); line-height: 1.6;
+  }
+  .foot-bottom em { font-family: "Fraunces", serif; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top">
+  <div class="inner">
+    <a class="wordmark" href="#top">
+      <span class="wm">Watersprite Lake</span>
+      <small>A Sea to Sky Trails field guide</small>
+    </a>
+    <div class="links">
+      <a href="#quicktake">Quick take</a>
+      <a href="#routelog">Route log</a>
+      <a href="#hut">The hut</a>
+      <a href="#seasons">When to go</a>
+      <a href="#faq">Questions</a>
+      <a href="https://seatoskytrails.com/">All guides</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== MASTHEAD ===================== -->
+<header class="masthead" id="top">
+  <div class="wrap">
+    <div class="vol-line">Sea to Sky Trails &middot; Vol.&nbsp;II, No.&nbsp;01</div>
+    <h1>Watersprite Lake</h1>
+    <p class="deck">A turquoise tarn held in a granite bowl east of Squamish &mdash; a full day&rsquo;s walk, a hut you have to earn a booking for, and some of the darkest night sky within reach of Highway 99.</p>
+  </div>
+  <div class="ribbon" aria-label="Trip data (approximate)">
+    <span><b>49.65&deg;&nbsp;N</b> &middot; 123.03&deg;&nbsp;W</span>
+    <span>Elev &asymp; <b>1,450&nbsp;m</b></span>
+    <span>&asymp; <b>17&nbsp;km</b> return</span>
+    <span>+<b>600&ndash;800&nbsp;m</b> gain</span>
+    <span><b>Full day</b></span>
+    <span>East of <b>Squamish</b></span>
+  </div>
+</header>
+
+<!-- ===================== HERO SCENE ===================== -->
+<div class="hero-scene" aria-hidden="false">
+  <svg viewBox="0 0 1440 640" role="img" aria-label="Hand-drawn scene of Watersprite Lake: a turquoise lake in a granite cirque bowl at dusk, with a small hut on the shore and stars overhead">
+    <defs>
+      <linearGradient id="ws-sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0"    stop-color="#22333f"/>
+        <stop offset="0.45" stop-color="#3d5a60"/>
+        <stop offset="0.78" stop-color="#7fa8a2"/>
+        <stop offset="1"    stop-color="#b8d3c8"/>
+      </linearGradient>
+      <linearGradient id="ws-lake" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0"   stop-color="#57c4b8"/>
+        <stop offset="0.6" stop-color="#2f9d94"/>
+        <stop offset="1"   stop-color="#1d7a75"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="1440" height="420" fill="url(#ws-sky)"/>
+
+    <!-- stars -->
+    <g fill="#e9f2ec">
+      <circle cx="120" cy="52"  r="1.6"/><circle cx="238" cy="96"  r="1.1"/>
+      <circle cx="342" cy="40"  r="1.3"/><circle cx="431" cy="118" r="1.0"/>
+      <circle cx="540" cy="66"  r="1.7"/><circle cx="629" cy="30"  r="1.1"/>
+      <circle cx="742" cy="88"  r="1.4"/><circle cx="836" cy="46"  r="1.0"/>
+      <circle cx="948" cy="104" r="1.6"/><circle cx="1042" cy="58" r="1.2"/>
+      <circle cx="1146" cy="92" r="1.0"/><circle cx="1238" cy="38" r="1.5"/>
+      <circle cx="1330" cy="110" r="1.1"/><circle cx="1394" cy="62" r="1.3"/>
+      <circle cx="76"  cy="150" r="1.0"/><circle cx="500" cy="150" r="1.0"/>
+      <circle cx="905" cy="152" r="1.1"/><circle cx="1290" cy="168" r="1.0"/>
+      <circle cx="672" cy="132" r="0.9"/><circle cx="180" cy="112" r="0.9"/>
+    </g>
+    <!-- one brighter star with cross flare -->
+    <g stroke="#eef6f0" stroke-width="1.1" stroke-linecap="round">
+      <path d="M 1088 84 L 1088 66"/><path d="M 1079 75 L 1097 75"/>
+    </g>
+
+    <!-- far back ridge -->
+    <path d="M0 300 L110 262 L215 288 L330 236 L430 274 L520 248 L640 282 L760 240 L880 276 L1000 246 L1120 280 L1230 250 L1330 278 L1440 254 L1440 420 L0 420 Z"
+          fill="#4c5a66" opacity="0.75"/>
+
+    <!-- cirque headwall: left buttress -->
+    <path d="M0 420 L0 250 L70 208 L128 240 L188 170 L252 226 L318 190 L392 268 L470 232 L560 320 L640 420 Z" fill="#5d6873"/>
+    <!-- left snow patches -->
+    <g fill="#eef2ef">
+      <path d="M188 172 L204 200 L196 214 L186 198 L178 210 L172 190 Z"/>
+      <path d="M252 228 L266 250 L256 262 L246 246 Z" opacity="0.9"/>
+      <path d="M70 212 L82 232 L72 244 L62 228 Z" opacity="0.85"/>
+    </g>
+
+    <!-- cirque headwall: right buttress (higher, sharper — Martin Peak area suggestion) -->
+    <path d="M1440 420 L1440 232 L1372 196 L1312 236 L1258 156 L1198 214 L1140 182 L1066 262 L988 224 L900 316 L820 420 Z" fill="#57626e"/>
+    <g fill="#eef2ef">
+      <path d="M1258 158 L1274 190 L1264 204 L1256 188 L1246 202 L1240 178 Z"/>
+      <path d="M1140 186 L1152 208 L1142 220 L1132 202 Z" opacity="0.9"/>
+      <path d="M1372 200 L1384 222 L1374 234 L1364 216 Z" opacity="0.85"/>
+    </g>
+
+    <!-- back bowl saddle joining the two buttresses -->
+    <path d="M560 322 L640 292 L720 306 L800 288 L880 314 L950 298 L1010 318 L1010 420 L560 420 Z" fill="#66717c"/>
+    <g fill="#eef2ef" opacity="0.8">
+      <path d="M720 308 L730 322 L722 330 L714 320 Z"/>
+      <path d="M800 290 L812 306 L802 316 L792 302 Z"/>
+    </g>
+
+    <!-- granite rib strokes on the walls -->
+    <g fill="none" stroke="#3f4a55" stroke-width="1.4" stroke-linecap="round" opacity="0.55">
+      <path d="M188 176 L214 288 M252 230 L268 320 M318 194 L336 300"/>
+      <path d="M1258 162 L1236 300 M1198 218 L1186 316 M1066 266 L1054 340"/>
+      <path d="M392 272 L404 344 M988 228 L978 330"/>
+    </g>
+
+    <!-- talus / boulder apron above the lake -->
+    <path d="M0 420 L1440 420 L1440 470 L0 470 Z" fill="#77828c"/>
+    <g fill="#8a949d">
+      <path d="M120 452 L146 438 L176 452 L150 464 Z"/>
+      <path d="M300 458 L322 444 L352 456 L328 468 Z"/>
+      <path d="M520 448 L544 436 L570 450 L546 462 Z"/>
+      <path d="M760 456 L786 442 L814 456 L788 466 Z"/>
+      <path d="M1000 450 L1024 438 L1052 452 L1026 462 Z"/>
+      <path d="M1220 456 L1246 442 L1274 456 L1248 466 Z"/>
+    </g>
+    <g fill="none" stroke="#5c6771" stroke-width="1.4" stroke-linecap="round" opacity="0.6">
+      <path d="M80 460 L104 448 M420 462 L448 450 M660 452 L688 442 M900 462 L926 450 M1140 460 L1166 448 M1330 452 L1356 442"/>
+    </g>
+
+    <!-- a few stunted subalpine trees on the apron -->
+    <g fill="#2f4a41">
+      <path d="M232 468 L240 434 L248 468 Z"/><path d="M226 462 L240 442 L254 462 Z"/>
+      <path d="M1102 470 L1110 438 L1118 470 Z"/><path d="M1096 464 L1110 446 L1124 464 Z"/>
+      <path d="M642 470 L648 446 L654 470 Z"/>
+    </g>
+
+    <!-- the hut: small gabled cabin on the right shore -->
+    <g>
+      <path d="M1176 470 L1176 500 L1240 500 L1240 470 Z" fill="#6e5747"/>
+      <path d="M1166 472 L1208 444 L1250 472 Z" fill="#3c454e"/>
+      <rect x="1186" y="480" width="12" height="14" fill="#f0c46a"/>
+      <rect x="1214" y="480" width="12" height="20" fill="#54443a"/>
+      <path d="M1226 446 L1226 430 L1234 430 L1234 452" fill="#3c454e"/>
+    </g>
+    <!-- two tent platforms, left shore -->
+    <g>
+      <rect x="330" y="492" width="44" height="6" fill="#5c6771"/>
+      <path d="M338 492 L352 476 L366 492 Z" fill="#c4756a"/>
+      <rect x="430" y="498" width="44" height="6" fill="#5c6771"/>
+      <path d="M438 498 L452 484 L466 498 Z" fill="#8fae9f"/>
+    </g>
+
+    <!-- lake -->
+    <path d="M0 470 C 240 458, 480 466, 720 462 C 960 458, 1200 466, 1440 460 L1440 640 L0 640 Z" fill="url(#ws-lake)"/>
+    <!-- reflected wall hint -->
+    <path d="M980 470 C 1060 490, 1150 496, 1250 486 C 1320 480, 1390 474, 1440 472 L1440 520 C 1340 528, 1180 532, 1060 520 C 1010 514, 985 496, 980 470 Z" fill="#2a8d86" opacity="0.55"/>
+    <path d="M120 472 C 200 494, 300 500, 400 490 C 470 484, 540 476, 600 474 L600 512 C 480 526, 320 528, 210 514 C 160 508, 130 492, 120 472 Z" fill="#2a8d86" opacity="0.45"/>
+    <!-- star reflections -->
+    <g fill="#d8efe8" opacity="0.8">
+      <circle cx="700" cy="540" r="1.3"/><circle cx="760" cy="580" r="1.0"/>
+      <circle cx="640" cy="596" r="1.1"/><circle cx="820" cy="552" r="0.9"/>
+    </g>
+    <!-- ripple strokes -->
+    <g fill="none" stroke="#bfe8de" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+      <path d="M180 528 q 30 -7 60 0 t 60 0"/>
+      <path d="M620 560 q 30 -7 60 0 t 60 0"/>
+      <path d="M1020 544 q 30 -7 60 0 t 60 0"/>
+      <path d="M380 594 q 30 -7 60 0 t 60 0"/>
+      <path d="M880 604 q 30 -7 60 0 t 60 0"/>
+      <path d="M1220 588 q 30 -7 60 0"/>
+    </g>
+  </svg>
+</div>
+<p class="hero-caption">The bowl at dusk &mdash; headwalls, talus, the hut, and the first stars. Drawn from memory, as all of these are.</p>
+
+<!-- ===================== QUICK TAKE ===================== -->
+<section class="quicktake" id="quicktake">
+  <div class="wrap">
+    <div class="qt-grid">
+      <div>
+        <div class="eyebrow">Quick Take</div>
+        <p class="qt-lead">Watersprite is the Squamish alpine lake that still asks something of you: a long gravel road, a full day on foot, and a boulder field before the reveal. The colour at the end is the same impossible turquoise the famous lakes have &mdash; without the tour buses.</p>
+        <p>The lake sits in a granite bowl in the mountains east of Squamish, below the ridgelines of the Martin Peak area. Getting there is a two-part commitment: roughly twenty-plus kilometres of the Mamquam Forest Service Road by vehicle, then a hike of about 17&nbsp;km round trip with somewhere on the order of 600&ndash;800&nbsp;m of climbing &mdash; old road grades first, then forest, then a talus field guarding the final approach.</p>
+        <p>On the shore stands the Watersprite Lake Hut, built and run by the BC Mountaineering Club, with tent platforms nearby. It books out fast &mdash; details below. Day-trippers need nothing but an early start, sturdy footwear, and more food than they think.</p>
+      </div>
+      <div>
+        <div class="stat-grid">
+          <div><div class="n">&asymp;17<small>&nbsp;km</small></div><div class="l">Round trip</div></div>
+          <div><div class="n">600&ndash;800<small>&nbsp;m</small></div><div class="l">Elevation gain</div></div>
+          <div><div class="n">Full<small>&nbsp;day</small></div><div class="l">Time on foot</div></div>
+          <div><div class="n">20+<small>&nbsp;km</small></div><div class="l">Gravel FSR</div></div>
+          <div><div class="n"><small>High-</small>clear.</div><div class="l">Vehicle advised</div></div>
+          <div><div class="n">BCMC</div><div class="l">Hut &amp; platforms</div></div>
+        </div>
+        <p class="stat-note">Figures approximate &mdash; treat them as planning numbers, not survey data. Road and trail conditions change; check before you drive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROUTE LOG ===================== -->
+<section class="routelog" id="routelog">
+  <div class="log-head">
+    <div class="eyebrow center">Route Log</div>
+    <h2>The day, in five movements.</h2>
+    <p>Distances below are rough &mdash; the shape of the day matters more than the numbers. Sturdy footwear throughout; the last movement is not sneaker terrain.</p>
+  </div>
+  <div class="log">
+
+    <div class="log-entry">
+      <div class="km">Movement I &middot; The drive</div>
+      <h3>Mamquam Forest Service Road</h3>
+      <p>Twenty-plus kilometres of gravel out of Squamish, and the part of the trip most likely to end it early. High-clearance is recommended; washouts, waterbars, and grading change season to season, so check current conditions before committing. The Mamquam valley is its own subject &mdash; we wrote it up separately at <a class="ul" href="https://mamquam.com/">mamquam.com</a>.</p>
+    </div>
+
+    <div class="log-entry">
+      <div class="km">Movement II &middot; The warm-up</div>
+      <h3>Old road grades</h3>
+      <p>From the marked trailhead, the route begins on decommissioned road &mdash; wide, steady, unglamorous. This is where you settle into a pace and eat the first snack you were saving for later. The kilometres pass quickly here; they will not pass quickly later.</p>
+    </div>
+
+    <div class="log-entry">
+      <div class="km">Movement III &middot; The forest</div>
+      <h3>Into the trees</h3>
+      <p>The road narrows to trail and the grade turns honest. Forest walking, steadily up, with the ridgelines flickering through gaps in the canopy. This is the bulk of the climbing &mdash; somewhere in that 600&ndash;800&nbsp;m band overall &mdash; and the stretch where the full-day math starts to make sense.</p>
+    </div>
+
+    <div class="log-entry">
+      <div class="km">Movement IV &middot; The gatekeeper</div>
+      <h3>The boulder field</h3>
+      <p>Near the lake the trees give out and the route crosses talus &mdash; car-sized granite blocks, hands out for balance, eyes on the line. It is slower than it looks and slower still when wet. This is why the guide keeps repeating <em>sturdy footwear</em>; ankles are the most commonly forgotten gear.</p>
+    </div>
+
+    <div class="log-entry summit">
+      <div class="km">Movement V &middot; The reveal</div>
+      <h3>The bowl</h3>
+      <p>You come over the lip and the lake is simply there &mdash; turquoise, ringed in granite, the hut small against the headwall. People go quiet at this point. Budget real time at the top: the plunge, the shoreline sit, the long look you walked all day for.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== ESSAY ===================== -->
+<section class="essay">
+  <div class="narrow">
+    <div class="eyebrow">Field Notes</div>
+    <h2 style="margin-bottom:2rem;">A bowl that holds the light.</h2>
+    <div class="body">
+      <p>Watersprite works on delay. The road buys the quiet, the old grades buy the forest, the forest buys the talus, and the talus buys the moment the bowl opens up &mdash; a turquoise lake set into granite like something placed there deliberately. The colour reads as an exaggeration in other people&rsquo;s pictures right up until you are standing at it.</p>
+      <p>The granite is the real subject. The bowl catches afternoon light and holds it long after the valley below has gone to shadow, and when the light finally leaves, the sky takes over. This is one of the better star-photography spots within reach of Squamish &mdash; far from town glow, with a headwall for a foreground and, on still nights, stars doubled in the water. Hut and platform guests who set an alarm for the blue hour tend to describe sunrise here in the tone people usually save for bigger trips.</p>
+
+      <div class="pullquote">
+        <p>&ldquo;The bowl does the thing granite does best &mdash; it holds the light all evening, and then it holds the stars.&rdquo;</p>
+        <cite>Field notebook, Vol. II</cite>
+      </div>
+
+      <p>And yes, people swim. Briefly. The lake is properly cold &mdash; this is plunge water, not float-around water &mdash; and the shrieking from the shoreline on a summer afternoon is part of the soundtrack. In and out, towel ready, sun on a warm slab afterwards. It is the correct way to finish the walk in.</p>
+      <p>The alpine here is the fragile kind. Shoreline vegetation at this elevation grows back on decade timescales, so stay on rock and durable surfaces, keep camp on the platforms, and pack out every single thing &mdash; there is no service run coming behind you. No campfires, full stop. Dogs are welcome company on the trail but keep them genuinely under control, especially around the shoreline and other people&rsquo;s camps. The place absorbs careful visitors well and careless ones badly.</p>
+      <p>Watersprite sits in the traditional territory of the S&#7735;wx&#818;w&uacute;7mesh &Uacute;xwumixw &mdash; the Squamish Nation &mdash; whose relationship with these mountains precedes every road, hut, and trip report by thousands of years. Walk accordingly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE HUT ===================== -->
+<section class="hut" id="hut">
+  <div class="wrap">
+    <div class="hut-grid">
+      <div>
+        <div class="eyebrow">The Hut</div>
+        <h2 style="margin-bottom:1.4rem;">The hardest reservation in the Squamish alpine.</h2>
+        <p>The Watersprite Lake Hut is built and operated by the <strong>BC Mountaineering Club</strong> &mdash; a proper backcountry hut on the shore of the lake, and one of the most sought-after overnight bookings in the corridor. It is <em>booking required, always</em>, through the BCMC, and dates go extremely fast; this is a plan-ahead objective, not a show-up-and-hope one.</p>
+        <p>Tent platforms near the hut offer the second way to sleep in the bowl &mdash; also managed through the BCMC, with their own fees and reservation rules. For current pricing, booking windows, and what the hut does and doesn&rsquo;t provide, go straight to the BCMC&rsquo;s site rather than trusting anything second-hand, including us.</p>
+        <p>If you can&rsquo;t land a date, take the hint the mountain is offering: Watersprite is a superb day trip, and the other great hut walk in the Squamish alpine &mdash; Elfin Lakes &mdash; has its own guide at <a class="ul" href="https://elfin-lake.com/">elfin-lake.com</a>.</p>
+      </div>
+      <div>
+        <div class="hut-card">
+          <h4>Overnight, at a glance</h4>
+          <ul>
+            <li><span class="k">Hut</span><span class="v"><em>Watersprite Lake Hut</em></span></li>
+            <li><span class="k">Operated by</span><span class="v">BC Mountaineering Club</span></li>
+            <li><span class="k">Booking</span><span class="v">Required &mdash; via BCMC</span></li>
+            <li><span class="k">Demand</span><span class="v">Extremely high</span></li>
+            <li><span class="k">Tent platforms</span><span class="v">Yes &mdash; fees/reservation apply</span></li>
+            <li><span class="k">Campfires</span><span class="v">Never</span></li>
+            <li><span class="k">Water</span><span class="v">Alpine source &mdash; treat it</span></li>
+          </ul>
+          <div class="book-note">Fees, capacity, booking windows, and hut amenities change &mdash; confirm everything on the BCMC&rsquo;s website before you commit to a date or drive the road.</div>
+        </div>
+        <div class="care-band" style="margin-top:1.2rem;">
+          <strong>Shoreline rules that matter</strong>
+          <p>No campfires &mdash; ever, in any season. Camp on platforms and durable rock, not vegetation. Pack out all garbage and food waste. Keep dogs under control. The bowl is small and alpine; it shows every shortcut people take.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHEN TO GO ===================== -->
+<section class="seasons" id="seasons">
+  <div class="narrow">
+    <div class="eyebrow">When to Go</div>
+    <h2>Pick the window before you pick the date.</h2>
+
+    <div class="season-rows">
+      <div class="season-row">
+        <div class="when">July &ndash; September</div>
+        <div class="what">The main window. Trail typically clear of snow, talus dry, lake at full colour, plunges at their least punishing. Hut and platform dates are hardest to get here &mdash; book far ahead or day-trip it.</div>
+      </div>
+      <div class="season-row">
+        <div class="when">June, early season</div>
+        <div class="what">Transitional and variable &mdash; lingering snow can hide the route through the boulders, and the FSR is often at its roughest after winter. Check road and trail conditions honestly before driving out.</div>
+      </div>
+      <div class="season-row">
+        <div class="when">October</div>
+        <div class="what">Quiet, cold, and short-lit. First snow can arrive high up any week; the full-day math gets tight against early sunsets. A headlamp stops being optional.</div>
+      </div>
+      <div class="season-row warn">
+        <div class="when">November &ndash; May</div>
+        <div class="what">Winter Watersprite is a serious ski-touring and mountaineering objective in avalanche terrain &mdash; see below. It is not a snowshoe outing, whatever the summer photos suggest.</div>
+      </div>
+    </div>
+
+    <div class="winter-band">
+      <strong>Winter &middot; this is avalanche terrain</strong>
+      <p>The winter approach travels through and beneath serious avalanche terrain. This is not a casual snowshoe trip &mdash; it demands avalanche training (AST at minimum), transceiver, probe and shovel with practiced skills, winter travel ability, and the judgment to turn around.</p>
+      <p>If your party doesn&rsquo;t honestly tick every one of those boxes, go in summer. The bowl will still be there, and it&rsquo;s better in colour anyway.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST NOTE ===================== -->
+<section class="honest">
+  <div class="narrow">
+    <div class="eyebrow">Honest Note</div>
+    <h2 style="margin-bottom:1.6rem;">What the trip reports leave out.</h2>
+    <p>The road is half the trip. More Watersprite days die on the Mamquam FSR than on the trail &mdash; a low car, an unexpected washout, a driver who didn&rsquo;t check conditions. Treat the drive as part of the objective: high-clearance recommended, current conditions checked, and a real spare. Our <a class="ul" href="https://mamquam.com/">Mamquam valley guide</a> covers the road in the detail it deserves.</p>
+    <p>The distance is honest and so is the boulder field. Seventeen-ish kilometres with several hundred metres of up is a genuine full day for most parties, and the talus near the lake punishes tired legs and slick soles. Start early, carry more water than feels necessary, and don&rsquo;t schedule anything for the evening.</p>
+    <p>And the hut is not a walk-up. People drive the road assuming they&rsquo;ll sort a bunk at the lake; there are no walk-up bunks. The hut and the platforms are <em>booked through the BCMC or not at all</em> &mdash; day-trip or reserve, those are the options. Plan like it.</p>
+  </div>
+</section>
+
+<!-- ===================== TRAILHEAD SUPPORT ===================== -->
+<section class="support">
+  <div class="wrap">
+    <div class="eyebrow">Trailhead Support</div>
+    <h2>Watersprite is a hike, not a paddle.</h2>
+    <div class="support-grid">
+      <div class="support-intro">
+        <p>Nobody is carrying a canoe over that boulder field, and nobody should. But the walk starts and ends in Squamish, and there&rsquo;s local support for the parts of the day that happen at valley level &mdash; gear you don&rsquo;t own, and flat turquoise water that doesn&rsquo;t cost you 17&nbsp;km.</p>
+      </div>
+      <div class="support-card">
+        <h3>Gear drop &amp; rentals</h3>
+        <p>Dry bags, sleep kit, camp extras &mdash; rent locally in Squamish before you head up the Mamquam FSR instead of hauling half a garage from the city.</p>
+        <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Arrange gear</a>
+      </div>
+      <div class="support-card">
+        <h3>The recovery paddle</h3>
+        <p>The day after a full-day alpine walk is made for flat water. <a class="ul" href="https://squamishcanoerental.com/">Squamish Canoe Rental</a> puts up to three of you in a canoe at valley level &mdash; all the turquoise, none of the talus.</p>
+        <a class="cta" href="https://squamishcanoerental.com/" target="_blank" rel="noopener">See the canoes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="narrow">
+    <div class="eyebrow">Questions &amp; Answers</div>
+    <h2>What people actually ask about Watersprite.</h2>
+
+    <div class="faq-list">
+
+      <details class="qa">
+        <summary><span class="tick">+</span>How long is the Watersprite Lake hike?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Roughly 17&nbsp;km round trip, with elevation gain on the order of 600&ndash;800&nbsp;m. The route mixes old road grades, forest trail, and a boulder field near the lake. Treat it as a full-day outing &mdash; most parties are happiest starting early &mdash; and wear sturdy footwear; the talus is not kind to sneakers.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>What is the road in like &mdash; do I need a 4x4?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Access is via the Mamquam Forest Service Road out of Squamish &mdash; twenty-plus kilometres of gravel to the marked trailhead. High-clearance is recommended, and conditions genuinely vary with season and maintenance, so check current reports before driving rather than trusting last year&rsquo;s. For the valley and the road itself, see our companion guide at <a class="ul" href="https://mamquam.com/">mamquam.com</a>.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>How do I book the Watersprite Lake Hut?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>The hut is run by the BC Mountaineering Club and booking is required through the BCMC &mdash; there are no walk-up spots. It is extremely popular, so dates disappear quickly; plan well ahead. Fees, booking windows, and amenities are the BCMC&rsquo;s to define, so confirm the details on their site before committing to a date.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>Can I camp in a tent instead?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Yes &mdash; there are tent platforms near the hut, also managed with fees and reservations through the BCMC. Check their site for the current rules. Camp on the platforms and durable rock, keep off the shoreline vegetation, and pack out absolutely everything. No campfires, in any season.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>Can you swim in Watersprite Lake?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>People absolutely plunge &mdash; briefly. This is cold alpine water even at the height of summer, so think in-and-out rather than laps, have a towel and warm layer staged, and warm up on the granite afterwards. Enter from rock, not from vegetated shoreline, which is fragile at this elevation.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>Is Watersprite good for photography?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Exceptional &mdash; and not just for the turquoise. The bowl is far from town glow, which makes it one of the better night-sky and sunrise locations within reach of Squamish. Overnighters with a hut or platform booking get the best of it: stars over the headwall, then first light coming into the bowl. Bring a tripod and a warmer layer than you think you need.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>Are dogs allowed?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Dogs join plenty of parties on this trail, but they need to be genuinely under control &mdash; the boulder field is hard on paws, the shoreline is fragile, and the camping area is close quarters. If in doubt about current rules for the hut and platforms, check with the BCMC before bringing a dog on an overnight.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="tick">+</span>Can I snowshoe to Watersprite in winter?<span style="flex:1"></span></summary>
+        <div class="ans">
+          <p>Not casually, no. The winter approach involves serious avalanche terrain and belongs to trained, equipped parties &mdash; avalanche skills training, transceiver/probe/shovel, and real winter travel experience. If that isn&rsquo;t your party, go between July and September instead, or pick a valley-level winter walk.</p>
+          <p>Planning more of the corridor? See our guides to <a class="ul" href="https://elfin-lake.com/">Elfin Lakes</a> &mdash; the other great Squamish hut hike &mdash; and the quieter <a class="ul" href="https://cirquelake.com/">Cirque Lake</a>.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="colophon">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>This Guide</h4>
+        <p>Watersprite Lake is an entry in the <a class="ul" href="https://seatoskytrails.com/">Sea to Sky Trails</a> &mdash; a slow-built field guide to the lakes, hikes, and outposts of the Coast Mountains. Figures are approximate; conditions are yours to verify.</p>
+      </div>
+      <div>
+        <h4>More Field Guides</h4>
+        <ul>
+          <li><a href="https://mamquam.com/">The Mamquam Valley</a></li>
+          <li><a href="https://elfin-lake.com/">Elfin Lakes</a></li>
+          <li><a href="https://cirquelake.com/">Cirque Lake</a></li>
+          <li><a href="https://lakelovelywater.com/">Lake Lovely Water</a></li>
+          <li><a href="https://joffrelake.com/">Joffre Lakes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trailhead Support</h4>
+        <ul>
+          <li><a href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear drop &amp; rentals</a></li>
+          <li><a href="https://squamishcanoerental.com/" target="_blank" rel="noopener">Squamish Canoe Rental</a></li>
+          <li><a href="https://squamishwatertaxi.com/tours.html" target="_blank" rel="noopener">Howe Sound boat tours</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div><em>Sea to Sky Trails</em> &middot; Vol.&nbsp;II, No.&nbsp;01 &middot; Published with respect in the traditional territory of the S&#7735;wx&#818;w&uacute;7mesh &Uacute;xwumixw (Squamish Nation).</div>
+      <div>Set in Fraunces &amp; Inter. Reader-funded. <a class="ul" href="https://seatoskytrails.com/">seatoskytrails.com</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Watersprite Lake",
+  "description": "A striking turquoise alpine lake in a granite bowl in the mountains east of Squamish, BC, below the ridgelines of the Martin Peak area. Reached via the Mamquam Forest Service Road and a roughly 17 km round-trip hike; home to the BCMC-operated Watersprite Lake Hut and tent platforms.",
+  "url": "https://waterspritelake.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "BC",
+    "addressLocality": "Squamish",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.65,
+    "longitude": -123.03
+  },
+  "isAccessibleForFree": true,
+  "publicAccess": true,
+  "touristType": ["Hikers", "Backpackers", "Photographers"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the Watersprite Lake hike?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Roughly 17 km round trip, with elevation gain on the order of 600–800 m. The route mixes old road grades, forest trail, and a boulder field near the lake. Treat it as a full-day outing, start early, and wear sturdy footwear — the talus is not kind to sneakers." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the road in like — do I need a 4x4?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Access is via the Mamquam Forest Service Road out of Squamish — twenty-plus kilometres of gravel to the marked trailhead. High-clearance is recommended, and conditions vary with season and maintenance, so check current reports before driving." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book the Watersprite Lake Hut?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Watersprite Lake Hut is run by the BC Mountaineering Club and booking is required through the BCMC — there are no walk-up spots. It is extremely popular, so plan well ahead, and confirm current fees, booking windows, and amenities on the BCMC's website." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I camp in a tent at Watersprite Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — there are tent platforms near the hut, also managed with fees and reservations through the BCMC; check their site for current rules. Camp on the platforms and durable rock, keep off shoreline vegetation, pack out everything, and note that campfires are never allowed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you swim in Watersprite Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "People plunge — briefly. It is cold alpine water even in summer, so think in-and-out rather than laps, stage a towel and warm layer, and enter from rock rather than fragile vegetated shoreline." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Watersprite Lake good for photography?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Exceptional. The granite bowl is far from town glow, making it one of the better night-sky and sunrise locations within reach of Squamish. Overnight guests at the hut or tent platforms get stars over the headwall and first light in the bowl. Bring a tripod and warm layers." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are dogs allowed at Watersprite Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dogs join many parties, but they must be genuinely under control — the boulder field is hard on paws, the alpine shoreline is fragile, and the camping area is close quarters. Check with the BCMC about current rules before bringing a dog on a hut or platform overnight." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I snowshoe to Watersprite Lake in winter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not casually. The winter approach involves serious avalanche terrain and belongs to trained, equipped parties with avalanche skills training, transceiver, probe, and shovel. If that is not your party, visit between July and September instead." }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
